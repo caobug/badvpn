@@ -221,34 +221,267 @@
 		3AB69E0B2078FC5800ABA419 /* DebugObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69DF62078FC5800ABA419 /* DebugObject.c */; };
 		3AB69E0C2078FC5800ABA419 /* DebugObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69DF72078FC5800ABA419 /* DebugObject.h */; };
 		3AB69E0D2078FC5800ABA419 /* DebugObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69DF72078FC5800ABA419 /* DebugObject.h */; };
-		3AB69E1D20790C4E00ABA419 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB69E1820790C2300ABA419 /* lwip.framework */; };
 		3AB69E1F20790D1600ABA419 /* tun2socks.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E1E20790D1600ABA419 /* tun2socks.c */; };
 		3AB69E2020790D1600ABA419 /* tun2socks.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E1E20790D1600ABA419 /* tun2socks.c */; };
+		3AB69EBE207939E500ABA419 /* altcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E25207939E400ABA419 /* altcp.c */; };
+		3AB69EBF207939E500ABA419 /* altcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E25207939E400ABA419 /* altcp.c */; };
+		3AB69EC0207939E500ABA419 /* altcp_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E26207939E400ABA419 /* altcp_tcp.c */; };
+		3AB69EC1207939E500ABA419 /* altcp_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E26207939E400ABA419 /* altcp_tcp.c */; };
+		3AB69EC2207939E500ABA419 /* def.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E27207939E400ABA419 /* def.c */; };
+		3AB69EC3207939E500ABA419 /* def.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E27207939E400ABA419 /* def.c */; };
+		3AB69EC4207939E500ABA419 /* dns.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E28207939E400ABA419 /* dns.c */; };
+		3AB69EC5207939E500ABA419 /* dns.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E28207939E400ABA419 /* dns.c */; };
+		3AB69EC6207939E500ABA419 /* inet_chksum.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E29207939E400ABA419 /* inet_chksum.c */; };
+		3AB69EC7207939E500ABA419 /* inet_chksum.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E29207939E400ABA419 /* inet_chksum.c */; };
+		3AB69EC8207939E500ABA419 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2A207939E400ABA419 /* init.c */; };
+		3AB69EC9207939E500ABA419 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2A207939E400ABA419 /* init.c */; };
+		3AB69ECA207939E500ABA419 /* ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2B207939E400ABA419 /* ip.c */; };
+		3AB69ECB207939E500ABA419 /* ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2B207939E400ABA419 /* ip.c */; };
+		3AB69ECC207939E500ABA419 /* autoip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2D207939E400ABA419 /* autoip.c */; };
+		3AB69ECD207939E500ABA419 /* autoip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2D207939E400ABA419 /* autoip.c */; };
+		3AB69ECE207939E500ABA419 /* dhcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2E207939E400ABA419 /* dhcp.c */; };
+		3AB69ECF207939E500ABA419 /* dhcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2E207939E400ABA419 /* dhcp.c */; };
+		3AB69ED0207939E500ABA419 /* etharp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2F207939E400ABA419 /* etharp.c */; };
+		3AB69ED1207939E500ABA419 /* etharp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E2F207939E400ABA419 /* etharp.c */; };
+		3AB69ED2207939E500ABA419 /* icmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E30207939E400ABA419 /* icmp.c */; };
+		3AB69ED3207939E500ABA419 /* icmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E30207939E400ABA419 /* icmp.c */; };
+		3AB69ED4207939E500ABA419 /* igmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E31207939E400ABA419 /* igmp.c */; };
+		3AB69ED5207939E500ABA419 /* igmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E31207939E400ABA419 /* igmp.c */; };
+		3AB69ED6207939E500ABA419 /* ip4.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E32207939E400ABA419 /* ip4.c */; };
+		3AB69ED7207939E500ABA419 /* ip4.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E32207939E400ABA419 /* ip4.c */; };
+		3AB69ED8207939E500ABA419 /* ip4_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E33207939E400ABA419 /* ip4_addr.c */; };
+		3AB69ED9207939E500ABA419 /* ip4_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E33207939E400ABA419 /* ip4_addr.c */; };
+		3AB69EDA207939E500ABA419 /* ip4_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E34207939E400ABA419 /* ip4_frag.c */; };
+		3AB69EDB207939E500ABA419 /* ip4_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E34207939E400ABA419 /* ip4_frag.c */; };
+		3AB69EDC207939E500ABA419 /* dhcp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E36207939E400ABA419 /* dhcp6.c */; };
+		3AB69EDD207939E500ABA419 /* dhcp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E36207939E400ABA419 /* dhcp6.c */; };
+		3AB69EDE207939E500ABA419 /* ethip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E37207939E400ABA419 /* ethip6.c */; };
+		3AB69EDF207939E500ABA419 /* ethip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E37207939E400ABA419 /* ethip6.c */; };
+		3AB69EE0207939E500ABA419 /* icmp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E38207939E400ABA419 /* icmp6.c */; };
+		3AB69EE1207939E500ABA419 /* icmp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E38207939E400ABA419 /* icmp6.c */; };
+		3AB69EE2207939E500ABA419 /* inet6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E39207939E400ABA419 /* inet6.c */; };
+		3AB69EE3207939E500ABA419 /* inet6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E39207939E400ABA419 /* inet6.c */; };
+		3AB69EE4207939E500ABA419 /* ip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3A207939E400ABA419 /* ip6.c */; };
+		3AB69EE5207939E500ABA419 /* ip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3A207939E400ABA419 /* ip6.c */; };
+		3AB69EE6207939E500ABA419 /* ip6_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3B207939E400ABA419 /* ip6_addr.c */; };
+		3AB69EE7207939E500ABA419 /* ip6_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3B207939E400ABA419 /* ip6_addr.c */; };
+		3AB69EE8207939E500ABA419 /* ip6_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3C207939E400ABA419 /* ip6_frag.c */; };
+		3AB69EE9207939E500ABA419 /* ip6_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3C207939E400ABA419 /* ip6_frag.c */; };
+		3AB69EEA207939E500ABA419 /* mld6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3D207939E400ABA419 /* mld6.c */; };
+		3AB69EEB207939E500ABA419 /* mld6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3D207939E400ABA419 /* mld6.c */; };
+		3AB69EEC207939E500ABA419 /* nd6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3E207939E400ABA419 /* nd6.c */; };
+		3AB69EED207939E500ABA419 /* nd6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3E207939E400ABA419 /* nd6.c */; };
+		3AB69EEE207939E500ABA419 /* mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3F207939E400ABA419 /* mem.c */; };
+		3AB69EEF207939E500ABA419 /* mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E3F207939E400ABA419 /* mem.c */; };
+		3AB69EF0207939E500ABA419 /* memp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E40207939E400ABA419 /* memp.c */; };
+		3AB69EF1207939E500ABA419 /* memp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E40207939E400ABA419 /* memp.c */; };
+		3AB69EF2207939E500ABA419 /* netif.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E41207939E400ABA419 /* netif.c */; };
+		3AB69EF3207939E500ABA419 /* netif.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E41207939E400ABA419 /* netif.c */; };
+		3AB69EF4207939E500ABA419 /* pbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E42207939E400ABA419 /* pbuf.c */; };
+		3AB69EF5207939E500ABA419 /* pbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E42207939E400ABA419 /* pbuf.c */; };
+		3AB69EF6207939E500ABA419 /* raw.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E43207939E400ABA419 /* raw.c */; };
+		3AB69EF7207939E500ABA419 /* raw.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E43207939E400ABA419 /* raw.c */; };
+		3AB69EF8207939E500ABA419 /* stats.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E44207939E400ABA419 /* stats.c */; };
+		3AB69EF9207939E500ABA419 /* stats.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E44207939E400ABA419 /* stats.c */; };
+		3AB69EFA207939E500ABA419 /* sys.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E45207939E400ABA419 /* sys.c */; };
+		3AB69EFB207939E500ABA419 /* sys.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E45207939E400ABA419 /* sys.c */; };
+		3AB69EFC207939E500ABA419 /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E46207939E400ABA419 /* tcp.c */; };
+		3AB69EFD207939E500ABA419 /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E46207939E400ABA419 /* tcp.c */; };
+		3AB69EFE207939E500ABA419 /* tcp_in.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E47207939E400ABA419 /* tcp_in.c */; };
+		3AB69EFF207939E500ABA419 /* tcp_in.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E47207939E400ABA419 /* tcp_in.c */; };
+		3AB69F00207939E500ABA419 /* tcp_out.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E48207939E400ABA419 /* tcp_out.c */; };
+		3AB69F01207939E500ABA419 /* tcp_out.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E48207939E400ABA419 /* tcp_out.c */; };
+		3AB69F02207939E500ABA419 /* timeouts.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E49207939E400ABA419 /* timeouts.c */; };
+		3AB69F03207939E500ABA419 /* timeouts.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E49207939E400ABA419 /* timeouts.c */; };
+		3AB69F04207939E500ABA419 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E4A207939E400ABA419 /* udp.c */; };
+		3AB69F05207939E500ABA419 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E4A207939E400ABA419 /* udp.c */; };
+		3AB69F06207939E500ABA419 /* altcp_tls_mbedtls.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E4D207939E400ABA419 /* altcp_tls_mbedtls.c */; };
+		3AB69F07207939E500ABA419 /* altcp_tls_mbedtls.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E4D207939E400ABA419 /* altcp_tls_mbedtls.c */; };
+		3AB69F08207939E500ABA419 /* altcp_tls_mbedtls_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E4E207939E400ABA419 /* altcp_tls_mbedtls_mem.c */; };
+		3AB69F09207939E500ABA419 /* altcp_tls_mbedtls_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E4E207939E400ABA419 /* altcp_tls_mbedtls_mem.c */; };
+		3AB69F0A207939E500ABA419 /* altcp_tls_mbedtls_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E4F207939E400ABA419 /* altcp_tls_mbedtls_mem.h */; };
+		3AB69F0B207939E500ABA419 /* altcp_tls_mbedtls_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E4F207939E400ABA419 /* altcp_tls_mbedtls_mem.h */; };
+		3AB69F0C207939E500ABA419 /* altcp_tls_mbedtls_structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E50207939E400ABA419 /* altcp_tls_mbedtls_structs.h */; };
+		3AB69F0D207939E500ABA419 /* altcp_tls_mbedtls_structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E50207939E400ABA419 /* altcp_tls_mbedtls_structs.h */; };
+		3AB69F0E207939E500ABA419 /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E53207939E400ABA419 /* 404.html */; };
+		3AB69F0F207939E500ABA419 /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E53207939E400ABA419 /* 404.html */; };
+		3AB69F10207939E500ABA419 /* sics.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E55207939E400ABA419 /* sics.gif */; };
+		3AB69F11207939E500ABA419 /* sics.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E55207939E400ABA419 /* sics.gif */; };
+		3AB69F12207939E500ABA419 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E56207939E400ABA419 /* index.html */; };
+		3AB69F13207939E500ABA419 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E56207939E400ABA419 /* index.html */; };
+		3AB69F18207939E500ABA419 /* fsdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E59207939E400ABA419 /* fsdata.h */; };
+		3AB69F19207939E500ABA419 /* fsdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E59207939E400ABA419 /* fsdata.h */; };
+		3AB69F1A207939E500ABA419 /* httpd.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E5A207939E400ABA419 /* httpd.c */; };
+		3AB69F1B207939E500ABA419 /* httpd.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E5A207939E400ABA419 /* httpd.c */; };
+		3AB69F1C207939E500ABA419 /* httpd_structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E5B207939E400ABA419 /* httpd_structs.h */; };
+		3AB69F1D207939E500ABA419 /* httpd_structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E5B207939E400ABA419 /* httpd_structs.h */; };
+		3AB69F24207939E500ABA419 /* tinydir.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E60207939E400ABA419 /* tinydir.h */; };
+		3AB69F25207939E500ABA419 /* tinydir.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E60207939E400ABA419 /* tinydir.h */; };
+		3AB69F26207939E500ABA419 /* lwiperf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E62207939E400ABA419 /* lwiperf.c */; };
+		3AB69F27207939E500ABA419 /* lwiperf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E62207939E400ABA419 /* lwiperf.c */; };
+		3AB69F28207939E500ABA419 /* mdns.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E64207939E400ABA419 /* mdns.c */; };
+		3AB69F29207939E500ABA419 /* mdns.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E64207939E400ABA419 /* mdns.c */; };
+		3AB69F2C207939E500ABA419 /* netbiosns.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E68207939E400ABA419 /* netbiosns.c */; };
+		3AB69F2D207939E500ABA419 /* netbiosns.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E68207939E400ABA419 /* netbiosns.c */; };
+		3AB69F2E207939E500ABA419 /* smtp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E6A207939E400ABA419 /* smtp.c */; };
+		3AB69F2F207939E500ABA419 /* smtp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E6A207939E400ABA419 /* smtp.c */; };
+		3AB69F30207939E500ABA419 /* snmp_asn1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E6C207939E400ABA419 /* snmp_asn1.c */; };
+		3AB69F31207939E500ABA419 /* snmp_asn1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E6C207939E400ABA419 /* snmp_asn1.c */; };
+		3AB69F32207939E500ABA419 /* snmp_asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E6D207939E400ABA419 /* snmp_asn1.h */; };
+		3AB69F33207939E500ABA419 /* snmp_asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E6D207939E400ABA419 /* snmp_asn1.h */; };
+		3AB69F34207939E500ABA419 /* snmp_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E6E207939E400ABA419 /* snmp_core.c */; };
+		3AB69F35207939E500ABA419 /* snmp_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E6E207939E400ABA419 /* snmp_core.c */; };
+		3AB69F36207939E500ABA419 /* snmp_core_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E6F207939E400ABA419 /* snmp_core_priv.h */; };
+		3AB69F37207939E500ABA419 /* snmp_core_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E6F207939E400ABA419 /* snmp_core_priv.h */; };
+		3AB69F38207939E500ABA419 /* snmp_mib2.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E70207939E400ABA419 /* snmp_mib2.c */; };
+		3AB69F39207939E500ABA419 /* snmp_mib2.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E70207939E400ABA419 /* snmp_mib2.c */; };
+		3AB69F3A207939E500ABA419 /* snmp_mib2_icmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E71207939E400ABA419 /* snmp_mib2_icmp.c */; };
+		3AB69F3B207939E500ABA419 /* snmp_mib2_icmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E71207939E400ABA419 /* snmp_mib2_icmp.c */; };
+		3AB69F3C207939E500ABA419 /* snmp_mib2_interfaces.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E72207939E400ABA419 /* snmp_mib2_interfaces.c */; };
+		3AB69F3D207939E500ABA419 /* snmp_mib2_interfaces.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E72207939E400ABA419 /* snmp_mib2_interfaces.c */; };
+		3AB69F3E207939E500ABA419 /* snmp_mib2_ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E73207939E400ABA419 /* snmp_mib2_ip.c */; };
+		3AB69F3F207939E500ABA419 /* snmp_mib2_ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E73207939E400ABA419 /* snmp_mib2_ip.c */; };
+		3AB69F40207939E500ABA419 /* snmp_mib2_snmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E74207939E400ABA419 /* snmp_mib2_snmp.c */; };
+		3AB69F41207939E500ABA419 /* snmp_mib2_snmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E74207939E400ABA419 /* snmp_mib2_snmp.c */; };
+		3AB69F42207939E500ABA419 /* snmp_mib2_system.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E75207939E400ABA419 /* snmp_mib2_system.c */; };
+		3AB69F43207939E500ABA419 /* snmp_mib2_system.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E75207939E400ABA419 /* snmp_mib2_system.c */; };
+		3AB69F44207939E500ABA419 /* snmp_mib2_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E76207939E400ABA419 /* snmp_mib2_tcp.c */; };
+		3AB69F45207939E500ABA419 /* snmp_mib2_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E76207939E400ABA419 /* snmp_mib2_tcp.c */; };
+		3AB69F46207939E500ABA419 /* snmp_mib2_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E77207939E400ABA419 /* snmp_mib2_udp.c */; };
+		3AB69F47207939E500ABA419 /* snmp_mib2_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E77207939E400ABA419 /* snmp_mib2_udp.c */; };
+		3AB69F48207939E500ABA419 /* snmp_msg.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E78207939E400ABA419 /* snmp_msg.c */; };
+		3AB69F49207939E500ABA419 /* snmp_msg.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E78207939E400ABA419 /* snmp_msg.c */; };
+		3AB69F4A207939E500ABA419 /* snmp_msg.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E79207939E400ABA419 /* snmp_msg.h */; };
+		3AB69F4B207939E500ABA419 /* snmp_msg.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E79207939E400ABA419 /* snmp_msg.h */; };
+		3AB69F4C207939E500ABA419 /* snmp_netconn.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7A207939E400ABA419 /* snmp_netconn.c */; };
+		3AB69F4D207939E500ABA419 /* snmp_netconn.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7A207939E400ABA419 /* snmp_netconn.c */; };
+		3AB69F4E207939E500ABA419 /* snmp_pbuf_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7B207939E400ABA419 /* snmp_pbuf_stream.c */; };
+		3AB69F4F207939E500ABA419 /* snmp_pbuf_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7B207939E400ABA419 /* snmp_pbuf_stream.c */; };
+		3AB69F50207939E500ABA419 /* snmp_pbuf_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E7C207939E400ABA419 /* snmp_pbuf_stream.h */; };
+		3AB69F51207939E500ABA419 /* snmp_pbuf_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E7C207939E400ABA419 /* snmp_pbuf_stream.h */; };
+		3AB69F52207939E500ABA419 /* snmp_raw.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7D207939E400ABA419 /* snmp_raw.c */; };
+		3AB69F53207939E500ABA419 /* snmp_raw.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7D207939E400ABA419 /* snmp_raw.c */; };
+		3AB69F54207939E500ABA419 /* snmp_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7E207939E400ABA419 /* snmp_scalar.c */; };
+		3AB69F55207939E500ABA419 /* snmp_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7E207939E400ABA419 /* snmp_scalar.c */; };
+		3AB69F56207939E500ABA419 /* snmp_snmpv2_framework.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7F207939E400ABA419 /* snmp_snmpv2_framework.c */; };
+		3AB69F57207939E500ABA419 /* snmp_snmpv2_framework.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E7F207939E400ABA419 /* snmp_snmpv2_framework.c */; };
+		3AB69F58207939E500ABA419 /* snmp_snmpv2_usm.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E80207939E400ABA419 /* snmp_snmpv2_usm.c */; };
+		3AB69F59207939E500ABA419 /* snmp_snmpv2_usm.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E80207939E400ABA419 /* snmp_snmpv2_usm.c */; };
+		3AB69F5A207939E500ABA419 /* snmp_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E81207939E400ABA419 /* snmp_table.c */; };
+		3AB69F5B207939E500ABA419 /* snmp_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E81207939E400ABA419 /* snmp_table.c */; };
+		3AB69F5C207939E500ABA419 /* snmp_threadsync.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E82207939E400ABA419 /* snmp_threadsync.c */; };
+		3AB69F5D207939E500ABA419 /* snmp_threadsync.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E82207939E400ABA419 /* snmp_threadsync.c */; };
+		3AB69F5E207939E500ABA419 /* snmp_traps.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E83207939E400ABA419 /* snmp_traps.c */; };
+		3AB69F5F207939E500ABA419 /* snmp_traps.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E83207939E400ABA419 /* snmp_traps.c */; };
+		3AB69F60207939E500ABA419 /* snmpv3.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E84207939E400ABA419 /* snmpv3.c */; };
+		3AB69F61207939E500ABA419 /* snmpv3.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E84207939E400ABA419 /* snmpv3.c */; };
+		3AB69F62207939E500ABA419 /* snmpv3_mbedtls.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E85207939E400ABA419 /* snmpv3_mbedtls.c */; };
+		3AB69F63207939E500ABA419 /* snmpv3_mbedtls.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E85207939E400ABA419 /* snmpv3_mbedtls.c */; };
+		3AB69F64207939E500ABA419 /* snmpv3_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E86207939E400ABA419 /* snmpv3_priv.h */; };
+		3AB69F65207939E500ABA419 /* snmpv3_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB69E86207939E400ABA419 /* snmpv3_priv.h */; };
+		3AB69F66207939E500ABA419 /* sntp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E88207939E400ABA419 /* sntp.c */; };
+		3AB69F67207939E500ABA419 /* sntp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E88207939E400ABA419 /* sntp.c */; };
+		3AB69F68207939E500ABA419 /* tftp_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8A207939E400ABA419 /* tftp_server.c */; };
+		3AB69F69207939E500ABA419 /* tftp_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8A207939E400ABA419 /* tftp_server.c */; };
+		3AB69F6A207939E500ABA419 /* bridgeif.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8C207939E400ABA419 /* bridgeif.c */; };
+		3AB69F6B207939E500ABA419 /* bridgeif.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8C207939E400ABA419 /* bridgeif.c */; };
+		3AB69F6C207939E500ABA419 /* ethernet.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8D207939E400ABA419 /* ethernet.c */; };
+		3AB69F6D207939E500ABA419 /* ethernet.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8D207939E400ABA419 /* ethernet.c */; };
+		3AB69F6E207939E500ABA419 /* ethernetif.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8E207939E400ABA419 /* ethernetif.c */; };
+		3AB69F6F207939E500ABA419 /* ethernetif.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E8E207939E400ABA419 /* ethernetif.c */; };
+		3AB69F70207939E500ABA419 /* FILES in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E8F207939E400ABA419 /* FILES */; };
+		3AB69F71207939E500ABA419 /* FILES in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69E8F207939E400ABA419 /* FILES */; };
+		3AB69F72207939E500ABA419 /* lowpan6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E90207939E400ABA419 /* lowpan6.c */; };
+		3AB69F73207939E500ABA419 /* lowpan6.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E90207939E400ABA419 /* lowpan6.c */; };
+		3AB69F74207939E500ABA419 /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E92207939E400ABA419 /* auth.c */; };
+		3AB69F75207939E500ABA419 /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E92207939E400ABA419 /* auth.c */; };
+		3AB69F76207939E500ABA419 /* ccp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E93207939E400ABA419 /* ccp.c */; };
+		3AB69F77207939E500ABA419 /* ccp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E93207939E400ABA419 /* ccp.c */; };
+		3AB69F78207939E500ABA419 /* chap-md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E94207939E400ABA419 /* chap-md5.c */; };
+		3AB69F79207939E500ABA419 /* chap-md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E94207939E400ABA419 /* chap-md5.c */; };
+		3AB69F7A207939E500ABA419 /* chap-new.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E95207939E400ABA419 /* chap-new.c */; };
+		3AB69F7B207939E500ABA419 /* chap-new.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E95207939E400ABA419 /* chap-new.c */; };
+		3AB69F7C207939E500ABA419 /* chap_ms.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E96207939E400ABA419 /* chap_ms.c */; };
+		3AB69F7D207939E500ABA419 /* chap_ms.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E96207939E400ABA419 /* chap_ms.c */; };
+		3AB69F7E207939E500ABA419 /* demand.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E97207939E400ABA419 /* demand.c */; };
+		3AB69F7F207939E500ABA419 /* demand.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E97207939E400ABA419 /* demand.c */; };
+		3AB69F80207939E500ABA419 /* eap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E98207939E400ABA419 /* eap.c */; };
+		3AB69F81207939E500ABA419 /* eap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E98207939E400ABA419 /* eap.c */; };
+		3AB69F82207939E500ABA419 /* ecp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E99207939E400ABA419 /* ecp.c */; };
+		3AB69F83207939E500ABA419 /* ecp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E99207939E400ABA419 /* ecp.c */; };
+		3AB69F84207939E500ABA419 /* eui64.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9A207939E400ABA419 /* eui64.c */; };
+		3AB69F85207939E500ABA419 /* eui64.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9A207939E400ABA419 /* eui64.c */; };
+		3AB69F86207939E500ABA419 /* fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9B207939E400ABA419 /* fsm.c */; };
+		3AB69F87207939E500ABA419 /* fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9B207939E400ABA419 /* fsm.c */; };
+		3AB69F88207939E500ABA419 /* ipcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9C207939E400ABA419 /* ipcp.c */; };
+		3AB69F89207939E500ABA419 /* ipcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9C207939E400ABA419 /* ipcp.c */; };
+		3AB69F8A207939E500ABA419 /* ipv6cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9D207939E400ABA419 /* ipv6cp.c */; };
+		3AB69F8B207939E500ABA419 /* ipv6cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9D207939E400ABA419 /* ipv6cp.c */; };
+		3AB69F8C207939E500ABA419 /* lcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9E207939E400ABA419 /* lcp.c */; };
+		3AB69F8D207939E500ABA419 /* lcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9E207939E400ABA419 /* lcp.c */; };
+		3AB69F8E207939E500ABA419 /* magic.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9F207939E400ABA419 /* magic.c */; };
+		3AB69F8F207939E500ABA419 /* magic.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E9F207939E400ABA419 /* magic.c */; };
+		3AB69F90207939E500ABA419 /* mppe.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA0207939E400ABA419 /* mppe.c */; };
+		3AB69F91207939E500ABA419 /* mppe.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA0207939E400ABA419 /* mppe.c */; };
+		3AB69F92207939E500ABA419 /* multilink.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA1207939E400ABA419 /* multilink.c */; };
+		3AB69F93207939E500ABA419 /* multilink.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA1207939E400ABA419 /* multilink.c */; };
+		3AB69F94207939E500ABA419 /* arc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA3207939E400ABA419 /* arc4.c */; };
+		3AB69F95207939E500ABA419 /* arc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA3207939E400ABA419 /* arc4.c */; };
+		3AB69F96207939E500ABA419 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA4207939E400ABA419 /* des.c */; };
+		3AB69F97207939E500ABA419 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA4207939E400ABA419 /* des.c */; };
+		3AB69F98207939E500ABA419 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA5207939E400ABA419 /* md4.c */; };
+		3AB69F99207939E500ABA419 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA5207939E400ABA419 /* md4.c */; };
+		3AB69F9A207939E500ABA419 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA6207939E400ABA419 /* md5.c */; };
+		3AB69F9B207939E500ABA419 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA6207939E400ABA419 /* md5.c */; };
+		3AB69F9C207939E500ABA419 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69EA7207939E400ABA419 /* README */; };
+		3AB69F9D207939E500ABA419 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69EA7207939E400ABA419 /* README */; };
+		3AB69F9E207939E500ABA419 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA8207939E400ABA419 /* sha1.c */; };
+		3AB69F9F207939E500ABA419 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA8207939E400ABA419 /* sha1.c */; };
+		3AB69FA0207939E500ABA419 /* ppp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA9207939E400ABA419 /* ppp.c */; };
+		3AB69FA1207939E500ABA419 /* ppp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EA9207939E400ABA419 /* ppp.c */; };
+		3AB69FA2207939E500ABA419 /* pppapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAA207939E400ABA419 /* pppapi.c */; };
+		3AB69FA3207939E500ABA419 /* pppapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAA207939E400ABA419 /* pppapi.c */; };
+		3AB69FA4207939E500ABA419 /* pppcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAB207939E400ABA419 /* pppcrypt.c */; };
+		3AB69FA5207939E500ABA419 /* pppcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAB207939E400ABA419 /* pppcrypt.c */; };
+		3AB69FA6207939E500ABA419 /* PPPD_FOLLOWUP in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69EAC207939E400ABA419 /* PPPD_FOLLOWUP */; };
+		3AB69FA7207939E500ABA419 /* PPPD_FOLLOWUP in Resources */ = {isa = PBXBuildFile; fileRef = 3AB69EAC207939E400ABA419 /* PPPD_FOLLOWUP */; };
+		3AB69FA8207939E500ABA419 /* pppoe.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAD207939E400ABA419 /* pppoe.c */; };
+		3AB69FA9207939E500ABA419 /* pppoe.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAD207939E400ABA419 /* pppoe.c */; };
+		3AB69FAA207939E500ABA419 /* pppol2tp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAE207939E400ABA419 /* pppol2tp.c */; };
+		3AB69FAB207939E500ABA419 /* pppol2tp.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAE207939E400ABA419 /* pppol2tp.c */; };
+		3AB69FAC207939E500ABA419 /* pppos.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAF207939E400ABA419 /* pppos.c */; };
+		3AB69FAD207939E500ABA419 /* pppos.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EAF207939E400ABA419 /* pppos.c */; };
+		3AB69FAE207939E500ABA419 /* upap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB0207939E400ABA419 /* upap.c */; };
+		3AB69FAF207939E500ABA419 /* upap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB0207939E400ABA419 /* upap.c */; };
+		3AB69FB0207939E500ABA419 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB1207939E400ABA419 /* utils.c */; };
+		3AB69FB1207939E500ABA419 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB1207939E400ABA419 /* utils.c */; };
+		3AB69FB2207939E500ABA419 /* vj.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB2207939E400ABA419 /* vj.c */; };
+		3AB69FB3207939E500ABA419 /* vj.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB2207939E400ABA419 /* vj.c */; };
+		3AB69FB6207939E500ABA419 /* api_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB5207939E500ABA419 /* api_lib.c */; };
+		3AB69FB7207939E500ABA419 /* api_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB5207939E500ABA419 /* api_lib.c */; };
+		3AB69FB8207939E500ABA419 /* api_msg.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB6207939E500ABA419 /* api_msg.c */; };
+		3AB69FB9207939E500ABA419 /* api_msg.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB6207939E500ABA419 /* api_msg.c */; };
+		3AB69FBA207939E500ABA419 /* err.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB7207939E500ABA419 /* err.c */; };
+		3AB69FBB207939E500ABA419 /* err.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB7207939E500ABA419 /* err.c */; };
+		3AB69FBC207939E500ABA419 /* if_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB8207939E500ABA419 /* if_api.c */; };
+		3AB69FBD207939E500ABA419 /* if_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB8207939E500ABA419 /* if_api.c */; };
+		3AB69FBE207939E500ABA419 /* netbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB9207939E500ABA419 /* netbuf.c */; };
+		3AB69FBF207939E500ABA419 /* netbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EB9207939E500ABA419 /* netbuf.c */; };
+		3AB69FC0207939E500ABA419 /* netdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBA207939E500ABA419 /* netdb.c */; };
+		3AB69FC1207939E500ABA419 /* netdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBA207939E500ABA419 /* netdb.c */; };
+		3AB69FC2207939E500ABA419 /* netifapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBB207939E500ABA419 /* netifapi.c */; };
+		3AB69FC3207939E500ABA419 /* netifapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBB207939E500ABA419 /* netifapi.c */; };
+		3AB69FC4207939E500ABA419 /* sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBC207939E500ABA419 /* sockets.c */; };
+		3AB69FC5207939E500ABA419 /* sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBC207939E500ABA419 /* sockets.c */; };
+		3AB69FC6207939E500ABA419 /* tcpip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBD207939E500ABA419 /* tcpip.c */; };
+		3AB69FC7207939E500ABA419 /* tcpip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69EBD207939E500ABA419 /* tcpip.c */; };
+		3AB69FD420793C9100ABA419 /* sys.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69FD320793C9100ABA419 /* sys.c */; };
+		3AB69FD520793C9100ABA419 /* sys.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69FD320793C9100ABA419 /* sys.c */; };
+		3AB69FD820793F6800ABA419 /* BTap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69DB02078F85A00ABA419 /* BTap.c */; };
+		3AB69FD920793F6800ABA419 /* BTap.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69DB02078F85A00ABA419 /* BTap.c */; };
+		3AB69FDD2079412B00ABA419 /* fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E57207939E400ABA419 /* fs.c */; };
+		3AB69FDE2079412C00ABA419 /* fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB69E57207939E400ABA419 /* fs.c */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3AB69E1720790C2300ABA419 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3AB69E1220790C2300ABA419 /* lwip.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3A6EB14A20784E3300763A08;
-			remoteInfo = "lwip iOS";
-		};
-		3AB69E1920790C2300ABA419 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3AB69E1220790C2300ABA419 /* lwip.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3A6EB15A20784F9100763A08;
-			remoteInfo = "lwip macOS";
-		};
-		3AB69E1B20790C4300ABA419 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3AB69E1220790C2300ABA419 /* lwip.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A6EB14920784E3300763A08;
-			remoteInfo = "lwip iOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A6EB14A20784E3300763A08 /* tun2socks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tun2socks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,8 +618,141 @@
 		3AB69DF52078FC5800ABA419 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		3AB69DF62078FC5800ABA419 /* DebugObject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DebugObject.c; sourceTree = "<group>"; };
 		3AB69DF72078FC5800ABA419 /* DebugObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugObject.h; sourceTree = "<group>"; };
-		3AB69E1220790C2300ABA419 /* lwip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = lwip.xcodeproj; path = "../lwip-origin/xcode/lwip.xcodeproj"; sourceTree = "<group>"; };
 		3AB69E1E20790D1600ABA419 /* tun2socks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tun2socks.c; sourceTree = SOURCE_ROOT; };
+		3AB69E25207939E400ABA419 /* altcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = altcp.c; sourceTree = "<group>"; };
+		3AB69E26207939E400ABA419 /* altcp_tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = altcp_tcp.c; sourceTree = "<group>"; };
+		3AB69E27207939E400ABA419 /* def.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = def.c; sourceTree = "<group>"; };
+		3AB69E28207939E400ABA419 /* dns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dns.c; sourceTree = "<group>"; };
+		3AB69E29207939E400ABA419 /* inet_chksum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet_chksum.c; sourceTree = "<group>"; };
+		3AB69E2A207939E400ABA419 /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		3AB69E2B207939E400ABA419 /* ip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip.c; sourceTree = "<group>"; };
+		3AB69E2D207939E400ABA419 /* autoip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autoip.c; sourceTree = "<group>"; };
+		3AB69E2E207939E400ABA419 /* dhcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhcp.c; sourceTree = "<group>"; };
+		3AB69E2F207939E400ABA419 /* etharp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = etharp.c; sourceTree = "<group>"; };
+		3AB69E30207939E400ABA419 /* icmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = icmp.c; sourceTree = "<group>"; };
+		3AB69E31207939E400ABA419 /* igmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = igmp.c; sourceTree = "<group>"; };
+		3AB69E32207939E400ABA419 /* ip4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip4.c; sourceTree = "<group>"; };
+		3AB69E33207939E400ABA419 /* ip4_addr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip4_addr.c; sourceTree = "<group>"; };
+		3AB69E34207939E400ABA419 /* ip4_frag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip4_frag.c; sourceTree = "<group>"; };
+		3AB69E36207939E400ABA419 /* dhcp6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dhcp6.c; sourceTree = "<group>"; };
+		3AB69E37207939E400ABA419 /* ethip6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ethip6.c; sourceTree = "<group>"; };
+		3AB69E38207939E400ABA419 /* icmp6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = icmp6.c; sourceTree = "<group>"; };
+		3AB69E39207939E400ABA419 /* inet6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet6.c; sourceTree = "<group>"; };
+		3AB69E3A207939E400ABA419 /* ip6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip6.c; sourceTree = "<group>"; };
+		3AB69E3B207939E400ABA419 /* ip6_addr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip6_addr.c; sourceTree = "<group>"; };
+		3AB69E3C207939E400ABA419 /* ip6_frag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ip6_frag.c; sourceTree = "<group>"; };
+		3AB69E3D207939E400ABA419 /* mld6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mld6.c; sourceTree = "<group>"; };
+		3AB69E3E207939E400ABA419 /* nd6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nd6.c; sourceTree = "<group>"; };
+		3AB69E3F207939E400ABA419 /* mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mem.c; sourceTree = "<group>"; };
+		3AB69E40207939E400ABA419 /* memp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memp.c; sourceTree = "<group>"; };
+		3AB69E41207939E400ABA419 /* netif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netif.c; sourceTree = "<group>"; };
+		3AB69E42207939E400ABA419 /* pbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbuf.c; sourceTree = "<group>"; };
+		3AB69E43207939E400ABA419 /* raw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = raw.c; sourceTree = "<group>"; };
+		3AB69E44207939E400ABA419 /* stats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stats.c; sourceTree = "<group>"; };
+		3AB69E45207939E400ABA419 /* sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys.c; sourceTree = "<group>"; };
+		3AB69E46207939E400ABA419 /* tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp.c; sourceTree = "<group>"; };
+		3AB69E47207939E400ABA419 /* tcp_in.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_in.c; sourceTree = "<group>"; };
+		3AB69E48207939E400ABA419 /* tcp_out.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcp_out.c; sourceTree = "<group>"; };
+		3AB69E49207939E400ABA419 /* timeouts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = timeouts.c; sourceTree = "<group>"; };
+		3AB69E4A207939E400ABA419 /* udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp.c; sourceTree = "<group>"; };
+		3AB69E4D207939E400ABA419 /* altcp_tls_mbedtls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = altcp_tls_mbedtls.c; sourceTree = "<group>"; };
+		3AB69E4E207939E400ABA419 /* altcp_tls_mbedtls_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = altcp_tls_mbedtls_mem.c; sourceTree = "<group>"; };
+		3AB69E4F207939E400ABA419 /* altcp_tls_mbedtls_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = altcp_tls_mbedtls_mem.h; sourceTree = "<group>"; };
+		3AB69E50207939E400ABA419 /* altcp_tls_mbedtls_structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = altcp_tls_mbedtls_structs.h; sourceTree = "<group>"; };
+		3AB69E53207939E400ABA419 /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
+		3AB69E55207939E400ABA419 /* sics.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sics.gif; sourceTree = "<group>"; };
+		3AB69E56207939E400ABA419 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3AB69E57207939E400ABA419 /* fs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fs.c; sourceTree = "<group>"; };
+		3AB69E58207939E400ABA419 /* fsdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fsdata.c; sourceTree = "<group>"; };
+		3AB69E59207939E400ABA419 /* fsdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fsdata.h; sourceTree = "<group>"; };
+		3AB69E5A207939E400ABA419 /* httpd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = httpd.c; sourceTree = "<group>"; };
+		3AB69E5B207939E400ABA419 /* httpd_structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpd_structs.h; sourceTree = "<group>"; };
+		3AB69E5D207939E400ABA419 /* makefsdata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = makefsdata; sourceTree = "<group>"; };
+		3AB69E5E207939E400ABA419 /* makefsdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = makefsdata.c; sourceTree = "<group>"; };
+		3AB69E5F207939E400ABA419 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		3AB69E60207939E400ABA419 /* tinydir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinydir.h; sourceTree = "<group>"; };
+		3AB69E62207939E400ABA419 /* lwiperf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lwiperf.c; sourceTree = "<group>"; };
+		3AB69E64207939E400ABA419 /* mdns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mdns.c; sourceTree = "<group>"; };
+		3AB69E66207939E400ABA419 /* mqtt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mqtt.c; sourceTree = "<group>"; };
+		3AB69E68207939E400ABA419 /* netbiosns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbiosns.c; sourceTree = "<group>"; };
+		3AB69E6A207939E400ABA419 /* smtp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smtp.c; sourceTree = "<group>"; };
+		3AB69E6C207939E400ABA419 /* snmp_asn1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_asn1.c; sourceTree = "<group>"; };
+		3AB69E6D207939E400ABA419 /* snmp_asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_asn1.h; sourceTree = "<group>"; };
+		3AB69E6E207939E400ABA419 /* snmp_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_core.c; sourceTree = "<group>"; };
+		3AB69E6F207939E400ABA419 /* snmp_core_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_core_priv.h; sourceTree = "<group>"; };
+		3AB69E70207939E400ABA419 /* snmp_mib2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2.c; sourceTree = "<group>"; };
+		3AB69E71207939E400ABA419 /* snmp_mib2_icmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2_icmp.c; sourceTree = "<group>"; };
+		3AB69E72207939E400ABA419 /* snmp_mib2_interfaces.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2_interfaces.c; sourceTree = "<group>"; };
+		3AB69E73207939E400ABA419 /* snmp_mib2_ip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2_ip.c; sourceTree = "<group>"; };
+		3AB69E74207939E400ABA419 /* snmp_mib2_snmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2_snmp.c; sourceTree = "<group>"; };
+		3AB69E75207939E400ABA419 /* snmp_mib2_system.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2_system.c; sourceTree = "<group>"; };
+		3AB69E76207939E400ABA419 /* snmp_mib2_tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2_tcp.c; sourceTree = "<group>"; };
+		3AB69E77207939E400ABA419 /* snmp_mib2_udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_mib2_udp.c; sourceTree = "<group>"; };
+		3AB69E78207939E400ABA419 /* snmp_msg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_msg.c; sourceTree = "<group>"; };
+		3AB69E79207939E400ABA419 /* snmp_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_msg.h; sourceTree = "<group>"; };
+		3AB69E7A207939E400ABA419 /* snmp_netconn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_netconn.c; sourceTree = "<group>"; };
+		3AB69E7B207939E400ABA419 /* snmp_pbuf_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_pbuf_stream.c; sourceTree = "<group>"; };
+		3AB69E7C207939E400ABA419 /* snmp_pbuf_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmp_pbuf_stream.h; sourceTree = "<group>"; };
+		3AB69E7D207939E400ABA419 /* snmp_raw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_raw.c; sourceTree = "<group>"; };
+		3AB69E7E207939E400ABA419 /* snmp_scalar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_scalar.c; sourceTree = "<group>"; };
+		3AB69E7F207939E400ABA419 /* snmp_snmpv2_framework.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_snmpv2_framework.c; sourceTree = "<group>"; };
+		3AB69E80207939E400ABA419 /* snmp_snmpv2_usm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_snmpv2_usm.c; sourceTree = "<group>"; };
+		3AB69E81207939E400ABA419 /* snmp_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_table.c; sourceTree = "<group>"; };
+		3AB69E82207939E400ABA419 /* snmp_threadsync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_threadsync.c; sourceTree = "<group>"; };
+		3AB69E83207939E400ABA419 /* snmp_traps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmp_traps.c; sourceTree = "<group>"; };
+		3AB69E84207939E400ABA419 /* snmpv3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmpv3.c; sourceTree = "<group>"; };
+		3AB69E85207939E400ABA419 /* snmpv3_mbedtls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snmpv3_mbedtls.c; sourceTree = "<group>"; };
+		3AB69E86207939E400ABA419 /* snmpv3_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snmpv3_priv.h; sourceTree = "<group>"; };
+		3AB69E88207939E400ABA419 /* sntp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sntp.c; sourceTree = "<group>"; };
+		3AB69E8A207939E400ABA419 /* tftp_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tftp_server.c; sourceTree = "<group>"; };
+		3AB69E8C207939E400ABA419 /* bridgeif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bridgeif.c; sourceTree = "<group>"; };
+		3AB69E8D207939E400ABA419 /* ethernet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ethernet.c; sourceTree = "<group>"; };
+		3AB69E8E207939E400ABA419 /* ethernetif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ethernetif.c; sourceTree = "<group>"; };
+		3AB69E8F207939E400ABA419 /* FILES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FILES; sourceTree = "<group>"; };
+		3AB69E90207939E400ABA419 /* lowpan6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lowpan6.c; sourceTree = "<group>"; };
+		3AB69E92207939E400ABA419 /* auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth.c; sourceTree = "<group>"; };
+		3AB69E93207939E400ABA419 /* ccp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ccp.c; sourceTree = "<group>"; };
+		3AB69E94207939E400ABA419 /* chap-md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "chap-md5.c"; sourceTree = "<group>"; };
+		3AB69E95207939E400ABA419 /* chap-new.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "chap-new.c"; sourceTree = "<group>"; };
+		3AB69E96207939E400ABA419 /* chap_ms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chap_ms.c; sourceTree = "<group>"; };
+		3AB69E97207939E400ABA419 /* demand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = demand.c; sourceTree = "<group>"; };
+		3AB69E98207939E400ABA419 /* eap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eap.c; sourceTree = "<group>"; };
+		3AB69E99207939E400ABA419 /* ecp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecp.c; sourceTree = "<group>"; };
+		3AB69E9A207939E400ABA419 /* eui64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = eui64.c; sourceTree = "<group>"; };
+		3AB69E9B207939E400ABA419 /* fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fsm.c; sourceTree = "<group>"; };
+		3AB69E9C207939E400ABA419 /* ipcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ipcp.c; sourceTree = "<group>"; };
+		3AB69E9D207939E400ABA419 /* ipv6cp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ipv6cp.c; sourceTree = "<group>"; };
+		3AB69E9E207939E400ABA419 /* lcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lcp.c; sourceTree = "<group>"; };
+		3AB69E9F207939E400ABA419 /* magic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = magic.c; sourceTree = "<group>"; };
+		3AB69EA0207939E400ABA419 /* mppe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mppe.c; sourceTree = "<group>"; };
+		3AB69EA1207939E400ABA419 /* multilink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = multilink.c; sourceTree = "<group>"; };
+		3AB69EA3207939E400ABA419 /* arc4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arc4.c; sourceTree = "<group>"; };
+		3AB69EA4207939E400ABA419 /* des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = des.c; sourceTree = "<group>"; };
+		3AB69EA5207939E400ABA419 /* md4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md4.c; sourceTree = "<group>"; };
+		3AB69EA6207939E400ABA419 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		3AB69EA7207939E400ABA419 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		3AB69EA8207939E400ABA419 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		3AB69EA9207939E400ABA419 /* ppp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ppp.c; sourceTree = "<group>"; };
+		3AB69EAA207939E400ABA419 /* pppapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pppapi.c; sourceTree = "<group>"; };
+		3AB69EAB207939E400ABA419 /* pppcrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pppcrypt.c; sourceTree = "<group>"; };
+		3AB69EAC207939E400ABA419 /* PPPD_FOLLOWUP */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PPPD_FOLLOWUP; sourceTree = "<group>"; };
+		3AB69EAD207939E400ABA419 /* pppoe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pppoe.c; sourceTree = "<group>"; };
+		3AB69EAE207939E400ABA419 /* pppol2tp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pppol2tp.c; sourceTree = "<group>"; };
+		3AB69EAF207939E400ABA419 /* pppos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pppos.c; sourceTree = "<group>"; };
+		3AB69EB0207939E400ABA419 /* upap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upap.c; sourceTree = "<group>"; };
+		3AB69EB1207939E400ABA419 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		3AB69EB2207939E400ABA419 /* vj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vj.c; sourceTree = "<group>"; };
+		3AB69EB3207939E400ABA419 /* slipif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = slipif.c; sourceTree = "<group>"; };
+		3AB69EB5207939E500ABA419 /* api_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = api_lib.c; sourceTree = "<group>"; };
+		3AB69EB6207939E500ABA419 /* api_msg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = api_msg.c; sourceTree = "<group>"; };
+		3AB69EB7207939E500ABA419 /* err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = err.c; sourceTree = "<group>"; };
+		3AB69EB8207939E500ABA419 /* if_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = if_api.c; sourceTree = "<group>"; };
+		3AB69EB9207939E500ABA419 /* netbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbuf.c; sourceTree = "<group>"; };
+		3AB69EBA207939E500ABA419 /* netdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netdb.c; sourceTree = "<group>"; };
+		3AB69EBB207939E500ABA419 /* netifapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netifapi.c; sourceTree = "<group>"; };
+		3AB69EBC207939E500ABA419 /* sockets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sockets.c; sourceTree = "<group>"; };
+		3AB69EBD207939E500ABA419 /* tcpip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpip.c; sourceTree = "<group>"; };
+		3AB69FD320793C9100ABA419 /* sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,7 +760,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AB69E1D20790C4E00ABA419 /* lwip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +776,7 @@
 		3A6EB14020784E3300763A08 = {
 			isa = PBXGroup;
 			children = (
-				3AB69E1220790C2300ABA419 /* lwip.xcodeproj */,
+				3AB69E23207939CB00ABA419 /* lwip */,
 				3AB69DEC2078FC5700ABA419 /* base */,
 				3AB69DD62078F9B500ABA419 /* flowextra */,
 				3AB69DCC2078F97B00ABA419 /* udpgw_client */,
@@ -644,13 +1009,326 @@
 			path = ../base;
 			sourceTree = "<group>";
 		};
-		3AB69E1320790C2300ABA419 /* Products */ = {
+		3AB69E23207939CB00ABA419 /* lwip */ = {
 			isa = PBXGroup;
 			children = (
-				3AB69E1820790C2300ABA419 /* lwip.framework */,
-				3AB69E1A20790C2300ABA419 /* lwip.framework */,
+				3AB69FC820793BA400ABA419 /* custom */,
+				3AB69EB4207939E500ABA419 /* api */,
+				3AB69E4B207939E400ABA419 /* apps */,
+				3AB69E24207939E400ABA419 /* core */,
+				3AB69E8B207939E400ABA419 /* netif */,
 			);
-			name = Products;
+			name = lwip;
+			sourceTree = "<group>";
+		};
+		3AB69E24207939E400ABA419 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E25207939E400ABA419 /* altcp.c */,
+				3AB69E26207939E400ABA419 /* altcp_tcp.c */,
+				3AB69E27207939E400ABA419 /* def.c */,
+				3AB69E28207939E400ABA419 /* dns.c */,
+				3AB69E29207939E400ABA419 /* inet_chksum.c */,
+				3AB69E2A207939E400ABA419 /* init.c */,
+				3AB69E2B207939E400ABA419 /* ip.c */,
+				3AB69E2C207939E400ABA419 /* ipv4 */,
+				3AB69E35207939E400ABA419 /* ipv6 */,
+				3AB69E3F207939E400ABA419 /* mem.c */,
+				3AB69E40207939E400ABA419 /* memp.c */,
+				3AB69E41207939E400ABA419 /* netif.c */,
+				3AB69E42207939E400ABA419 /* pbuf.c */,
+				3AB69E43207939E400ABA419 /* raw.c */,
+				3AB69E44207939E400ABA419 /* stats.c */,
+				3AB69E45207939E400ABA419 /* sys.c */,
+				3AB69E46207939E400ABA419 /* tcp.c */,
+				3AB69E47207939E400ABA419 /* tcp_in.c */,
+				3AB69E48207939E400ABA419 /* tcp_out.c */,
+				3AB69E49207939E400ABA419 /* timeouts.c */,
+				3AB69E4A207939E400ABA419 /* udp.c */,
+			);
+			name = core;
+			path = ../lwip/src/core;
+			sourceTree = "<group>";
+		};
+		3AB69E2C207939E400ABA419 /* ipv4 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E2D207939E400ABA419 /* autoip.c */,
+				3AB69E2E207939E400ABA419 /* dhcp.c */,
+				3AB69E2F207939E400ABA419 /* etharp.c */,
+				3AB69E30207939E400ABA419 /* icmp.c */,
+				3AB69E31207939E400ABA419 /* igmp.c */,
+				3AB69E32207939E400ABA419 /* ip4.c */,
+				3AB69E33207939E400ABA419 /* ip4_addr.c */,
+				3AB69E34207939E400ABA419 /* ip4_frag.c */,
+			);
+			path = ipv4;
+			sourceTree = "<group>";
+		};
+		3AB69E35207939E400ABA419 /* ipv6 */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E36207939E400ABA419 /* dhcp6.c */,
+				3AB69E37207939E400ABA419 /* ethip6.c */,
+				3AB69E38207939E400ABA419 /* icmp6.c */,
+				3AB69E39207939E400ABA419 /* inet6.c */,
+				3AB69E3A207939E400ABA419 /* ip6.c */,
+				3AB69E3B207939E400ABA419 /* ip6_addr.c */,
+				3AB69E3C207939E400ABA419 /* ip6_frag.c */,
+				3AB69E3D207939E400ABA419 /* mld6.c */,
+				3AB69E3E207939E400ABA419 /* nd6.c */,
+			);
+			path = ipv6;
+			sourceTree = "<group>";
+		};
+		3AB69E4B207939E400ABA419 /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E4C207939E400ABA419 /* altcp_tls */,
+				3AB69E51207939E400ABA419 /* httpd */,
+				3AB69E61207939E400ABA419 /* lwiperf */,
+				3AB69E63207939E400ABA419 /* mdns */,
+				3AB69E65207939E400ABA419 /* mqtt */,
+				3AB69E67207939E400ABA419 /* netbiosns */,
+				3AB69E69207939E400ABA419 /* smtp */,
+				3AB69E6B207939E400ABA419 /* snmp */,
+				3AB69E87207939E400ABA419 /* sntp */,
+				3AB69E89207939E400ABA419 /* tftp */,
+			);
+			name = apps;
+			path = ../lwip/src/apps;
+			sourceTree = "<group>";
+		};
+		3AB69E4C207939E400ABA419 /* altcp_tls */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E4D207939E400ABA419 /* altcp_tls_mbedtls.c */,
+				3AB69E4E207939E400ABA419 /* altcp_tls_mbedtls_mem.c */,
+				3AB69E4F207939E400ABA419 /* altcp_tls_mbedtls_mem.h */,
+				3AB69E50207939E400ABA419 /* altcp_tls_mbedtls_structs.h */,
+			);
+			path = altcp_tls;
+			sourceTree = "<group>";
+		};
+		3AB69E51207939E400ABA419 /* httpd */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E52207939E400ABA419 /* fs */,
+				3AB69E57207939E400ABA419 /* fs.c */,
+				3AB69E58207939E400ABA419 /* fsdata.c */,
+				3AB69E59207939E400ABA419 /* fsdata.h */,
+				3AB69E5A207939E400ABA419 /* httpd.c */,
+				3AB69E5B207939E400ABA419 /* httpd_structs.h */,
+				3AB69E5C207939E400ABA419 /* makefsdata */,
+			);
+			path = httpd;
+			sourceTree = "<group>";
+		};
+		3AB69E52207939E400ABA419 /* fs */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E53207939E400ABA419 /* 404.html */,
+				3AB69E54207939E400ABA419 /* img */,
+				3AB69E56207939E400ABA419 /* index.html */,
+			);
+			path = fs;
+			sourceTree = "<group>";
+		};
+		3AB69E54207939E400ABA419 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E55207939E400ABA419 /* sics.gif */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		3AB69E5C207939E400ABA419 /* makefsdata */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E5D207939E400ABA419 /* makefsdata */,
+				3AB69E5E207939E400ABA419 /* makefsdata.c */,
+				3AB69E5F207939E400ABA419 /* readme.txt */,
+				3AB69E60207939E400ABA419 /* tinydir.h */,
+			);
+			path = makefsdata;
+			sourceTree = "<group>";
+		};
+		3AB69E61207939E400ABA419 /* lwiperf */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E62207939E400ABA419 /* lwiperf.c */,
+			);
+			path = lwiperf;
+			sourceTree = "<group>";
+		};
+		3AB69E63207939E400ABA419 /* mdns */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E64207939E400ABA419 /* mdns.c */,
+			);
+			path = mdns;
+			sourceTree = "<group>";
+		};
+		3AB69E65207939E400ABA419 /* mqtt */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E66207939E400ABA419 /* mqtt.c */,
+			);
+			path = mqtt;
+			sourceTree = "<group>";
+		};
+		3AB69E67207939E400ABA419 /* netbiosns */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E68207939E400ABA419 /* netbiosns.c */,
+			);
+			path = netbiosns;
+			sourceTree = "<group>";
+		};
+		3AB69E69207939E400ABA419 /* smtp */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E6A207939E400ABA419 /* smtp.c */,
+			);
+			path = smtp;
+			sourceTree = "<group>";
+		};
+		3AB69E6B207939E400ABA419 /* snmp */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E6C207939E400ABA419 /* snmp_asn1.c */,
+				3AB69E6D207939E400ABA419 /* snmp_asn1.h */,
+				3AB69E6E207939E400ABA419 /* snmp_core.c */,
+				3AB69E6F207939E400ABA419 /* snmp_core_priv.h */,
+				3AB69E70207939E400ABA419 /* snmp_mib2.c */,
+				3AB69E71207939E400ABA419 /* snmp_mib2_icmp.c */,
+				3AB69E72207939E400ABA419 /* snmp_mib2_interfaces.c */,
+				3AB69E73207939E400ABA419 /* snmp_mib2_ip.c */,
+				3AB69E74207939E400ABA419 /* snmp_mib2_snmp.c */,
+				3AB69E75207939E400ABA419 /* snmp_mib2_system.c */,
+				3AB69E76207939E400ABA419 /* snmp_mib2_tcp.c */,
+				3AB69E77207939E400ABA419 /* snmp_mib2_udp.c */,
+				3AB69E78207939E400ABA419 /* snmp_msg.c */,
+				3AB69E79207939E400ABA419 /* snmp_msg.h */,
+				3AB69E7A207939E400ABA419 /* snmp_netconn.c */,
+				3AB69E7B207939E400ABA419 /* snmp_pbuf_stream.c */,
+				3AB69E7C207939E400ABA419 /* snmp_pbuf_stream.h */,
+				3AB69E7D207939E400ABA419 /* snmp_raw.c */,
+				3AB69E7E207939E400ABA419 /* snmp_scalar.c */,
+				3AB69E7F207939E400ABA419 /* snmp_snmpv2_framework.c */,
+				3AB69E80207939E400ABA419 /* snmp_snmpv2_usm.c */,
+				3AB69E81207939E400ABA419 /* snmp_table.c */,
+				3AB69E82207939E400ABA419 /* snmp_threadsync.c */,
+				3AB69E83207939E400ABA419 /* snmp_traps.c */,
+				3AB69E84207939E400ABA419 /* snmpv3.c */,
+				3AB69E85207939E400ABA419 /* snmpv3_mbedtls.c */,
+				3AB69E86207939E400ABA419 /* snmpv3_priv.h */,
+			);
+			path = snmp;
+			sourceTree = "<group>";
+		};
+		3AB69E87207939E400ABA419 /* sntp */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E88207939E400ABA419 /* sntp.c */,
+			);
+			path = sntp;
+			sourceTree = "<group>";
+		};
+		3AB69E89207939E400ABA419 /* tftp */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E8A207939E400ABA419 /* tftp_server.c */,
+			);
+			path = tftp;
+			sourceTree = "<group>";
+		};
+		3AB69E8B207939E400ABA419 /* netif */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E8C207939E400ABA419 /* bridgeif.c */,
+				3AB69E8D207939E400ABA419 /* ethernet.c */,
+				3AB69E8E207939E400ABA419 /* ethernetif.c */,
+				3AB69E8F207939E400ABA419 /* FILES */,
+				3AB69E90207939E400ABA419 /* lowpan6.c */,
+				3AB69E91207939E400ABA419 /* ppp */,
+				3AB69EB3207939E400ABA419 /* slipif.c */,
+			);
+			name = netif;
+			path = ../lwip/src/netif;
+			sourceTree = "<group>";
+		};
+		3AB69E91207939E400ABA419 /* ppp */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69E92207939E400ABA419 /* auth.c */,
+				3AB69E93207939E400ABA419 /* ccp.c */,
+				3AB69E94207939E400ABA419 /* chap-md5.c */,
+				3AB69E95207939E400ABA419 /* chap-new.c */,
+				3AB69E96207939E400ABA419 /* chap_ms.c */,
+				3AB69E97207939E400ABA419 /* demand.c */,
+				3AB69E98207939E400ABA419 /* eap.c */,
+				3AB69E99207939E400ABA419 /* ecp.c */,
+				3AB69E9A207939E400ABA419 /* eui64.c */,
+				3AB69E9B207939E400ABA419 /* fsm.c */,
+				3AB69E9C207939E400ABA419 /* ipcp.c */,
+				3AB69E9D207939E400ABA419 /* ipv6cp.c */,
+				3AB69E9E207939E400ABA419 /* lcp.c */,
+				3AB69E9F207939E400ABA419 /* magic.c */,
+				3AB69EA0207939E400ABA419 /* mppe.c */,
+				3AB69EA1207939E400ABA419 /* multilink.c */,
+				3AB69EA2207939E400ABA419 /* polarssl */,
+				3AB69EA9207939E400ABA419 /* ppp.c */,
+				3AB69EAA207939E400ABA419 /* pppapi.c */,
+				3AB69EAB207939E400ABA419 /* pppcrypt.c */,
+				3AB69EAC207939E400ABA419 /* PPPD_FOLLOWUP */,
+				3AB69EAD207939E400ABA419 /* pppoe.c */,
+				3AB69EAE207939E400ABA419 /* pppol2tp.c */,
+				3AB69EAF207939E400ABA419 /* pppos.c */,
+				3AB69EB0207939E400ABA419 /* upap.c */,
+				3AB69EB1207939E400ABA419 /* utils.c */,
+				3AB69EB2207939E400ABA419 /* vj.c */,
+			);
+			path = ppp;
+			sourceTree = "<group>";
+		};
+		3AB69EA2207939E400ABA419 /* polarssl */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69EA3207939E400ABA419 /* arc4.c */,
+				3AB69EA4207939E400ABA419 /* des.c */,
+				3AB69EA5207939E400ABA419 /* md4.c */,
+				3AB69EA6207939E400ABA419 /* md5.c */,
+				3AB69EA7207939E400ABA419 /* README */,
+				3AB69EA8207939E400ABA419 /* sha1.c */,
+			);
+			path = polarssl;
+			sourceTree = "<group>";
+		};
+		3AB69EB4207939E500ABA419 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69EB5207939E500ABA419 /* api_lib.c */,
+				3AB69EB6207939E500ABA419 /* api_msg.c */,
+				3AB69EB7207939E500ABA419 /* err.c */,
+				3AB69EB8207939E500ABA419 /* if_api.c */,
+				3AB69EB9207939E500ABA419 /* netbuf.c */,
+				3AB69EBA207939E500ABA419 /* netdb.c */,
+				3AB69EBB207939E500ABA419 /* netifapi.c */,
+				3AB69EBC207939E500ABA419 /* sockets.c */,
+				3AB69EBD207939E500ABA419 /* tcpip.c */,
+			);
+			name = api;
+			path = ../lwip/src/api;
+			sourceTree = "<group>";
+		};
+		3AB69FC820793BA400ABA419 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69FD320793C9100ABA419 /* sys.c */,
+			);
+			name = custom;
+			path = ../lwip/custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,8 +1340,10 @@
 			files = (
 				3AB69CD32078F7E500ABA419 /* BAddr.h in Headers */,
 				3AB69CF12078F7E500ABA419 /* BConnection.h in Headers */,
+				3AB69F4A207939E500ABA419 /* snmp_msg.h in Headers */,
 				3A6EB14F20784E3300763A08 /* tun2socks.h in Headers */,
 				3AB69D752078F80700ABA419 /* PacketRecvBlocker.h in Headers */,
+				3AB69F36207939E500ABA419 /* snmp_core_priv.h in Headers */,
 				3AB69D8D2078F80700ABA419 /* SinglePacketBuffer.h in Headers */,
 				3AB69D5B2078F80700ABA419 /* PacketPassInterface.h in Headers */,
 				3AB69D912078F80700ABA419 /* SinglePacketSender.h in Headers */,
@@ -679,12 +1359,14 @@
 				3AB69CE52078F7E500ABA419 /* BProcess.h in Headers */,
 				3AB69C7A2078F5AE00ABA419 /* SocksUdpGwClient.h in Headers */,
 				3AB69D7D2078F80700ABA419 /* PacketRecvInterface.h in Headers */,
+				3AB69F1C207939E500ABA419 /* httpd_structs.h in Headers */,
 				3AB69D952078F80700ABA419 /* SingleStreamReceiver.h in Headers */,
 				3AB69D512078F80700ABA419 /* PacketPassFairQueue.h in Headers */,
 				3AB69D992078F80700ABA419 /* SingleStreamSender.h in Headers */,
 				3AB69CD12078F7E500ABA419 /* BThreadSignal.h in Headers */,
 				3AB69CED2078F7E500ABA419 /* BConnection_unix.h in Headers */,
 				3AB69D9D2078F80700ABA419 /* StreamPacketSender.h in Headers */,
+				3AB69F32207939E500ABA419 /* snmp_asn1.h in Headers */,
 				3AB69D452078F80700ABA419 /* PacketBuffer.h in Headers */,
 				3AB69CFB2078F7E500ABA419 /* BInputProcess.h in Headers */,
 				3AB69D692078F80700ABA419 /* PacketProtoDecoder.h in Headers */,
@@ -693,12 +1375,17 @@
 				3AB69E0C2078FC5800ABA419 /* DebugObject.h in Headers */,
 				3AB69D3B2078F80700ABA419 /* BufferWriter.h in Headers */,
 				3AB69D652078F80700ABA419 /* PacketPassPriorityQueue_tree.h in Headers */,
+				3AB69F64207939E500ABA419 /* snmpv3_priv.h in Headers */,
+				3AB69F24207939E500ABA419 /* tinydir.h in Headers */,
+				3AB69F0C207939E500ABA419 /* altcp_tls_mbedtls_structs.h in Headers */,
 				3AB69D812078F80700ABA419 /* PacketRouter.h in Headers */,
 				3AB69D5F2078F80700ABA419 /* PacketPassNotifier.h in Headers */,
 				3AB69D852078F80700ABA419 /* PacketStreamSender.h in Headers */,
 				3AB69D6D2078F80700ABA419 /* PacketProtoEncoder.h in Headers */,
 				3AB69D632078F80700ABA419 /* PacketPassPriorityQueue.h in Headers */,
 				3AB69DE42078F9B500ABA419 /* PacketPassInactivityMonitor.h in Headers */,
+				3AB69F50207939E500ABA419 /* snmp_pbuf_stream.h in Headers */,
+				3AB69F0A207939E500ABA419 /* altcp_tls_mbedtls_mem.h in Headers */,
 				3AB69D492078F80700ABA419 /* PacketCopier.h in Headers */,
 				3AB69E042078FC5800ABA419 /* BPending.h in Headers */,
 				3AB69D412078F80700ABA419 /* LineBuffer.h in Headers */,
@@ -709,6 +1396,7 @@
 				3AB69CE92078F7E500ABA419 /* BReactor.h in Headers */,
 				3AB69C7C2078F5AE00ABA419 /* tun2socks.h in Headers */,
 				3AB69D4D2078F80700ABA419 /* PacketPassConnector.h in Headers */,
+				3AB69F18207939E500ABA419 /* fsdata.h in Headers */,
 				3AB69CCF2078F7E500ABA419 /* BSignal.h in Headers */,
 				3AB69D712078F80700ABA419 /* PacketProtoFlow.h in Headers */,
 				3AB69D892078F80700ABA419 /* RouteBuffer.h in Headers */,
@@ -728,8 +1416,10 @@
 			files = (
 				3AB69CD42078F7E500ABA419 /* BAddr.h in Headers */,
 				3AB69CF22078F7E500ABA419 /* BConnection.h in Headers */,
+				3AB69F4B207939E500ABA419 /* snmp_msg.h in Headers */,
 				3A6EB1622078501800763A08 /* tun2socks.h in Headers */,
 				3AB69D762078F80700ABA419 /* PacketRecvBlocker.h in Headers */,
+				3AB69F37207939E500ABA419 /* snmp_core_priv.h in Headers */,
 				3AB69D8E2078F80700ABA419 /* SinglePacketBuffer.h in Headers */,
 				3AB69D5C2078F80700ABA419 /* PacketPassInterface.h in Headers */,
 				3AB69D922078F80700ABA419 /* SinglePacketSender.h in Headers */,
@@ -745,12 +1435,14 @@
 				3AB69CE62078F7E500ABA419 /* BProcess.h in Headers */,
 				3AB69C7B2078F5AE00ABA419 /* SocksUdpGwClient.h in Headers */,
 				3AB69D7E2078F80700ABA419 /* PacketRecvInterface.h in Headers */,
+				3AB69F1D207939E500ABA419 /* httpd_structs.h in Headers */,
 				3AB69D962078F80700ABA419 /* SingleStreamReceiver.h in Headers */,
 				3AB69D522078F80700ABA419 /* PacketPassFairQueue.h in Headers */,
 				3AB69D9A2078F80700ABA419 /* SingleStreamSender.h in Headers */,
 				3AB69CD22078F7E500ABA419 /* BThreadSignal.h in Headers */,
 				3AB69CEE2078F7E500ABA419 /* BConnection_unix.h in Headers */,
 				3AB69D9E2078F80700ABA419 /* StreamPacketSender.h in Headers */,
+				3AB69F33207939E500ABA419 /* snmp_asn1.h in Headers */,
 				3AB69D462078F80700ABA419 /* PacketBuffer.h in Headers */,
 				3AB69CFC2078F7E500ABA419 /* BInputProcess.h in Headers */,
 				3AB69D6A2078F80700ABA419 /* PacketProtoDecoder.h in Headers */,
@@ -759,12 +1451,17 @@
 				3AB69E0D2078FC5800ABA419 /* DebugObject.h in Headers */,
 				3AB69D3C2078F80700ABA419 /* BufferWriter.h in Headers */,
 				3AB69D662078F80700ABA419 /* PacketPassPriorityQueue_tree.h in Headers */,
+				3AB69F65207939E500ABA419 /* snmpv3_priv.h in Headers */,
+				3AB69F25207939E500ABA419 /* tinydir.h in Headers */,
+				3AB69F0D207939E500ABA419 /* altcp_tls_mbedtls_structs.h in Headers */,
 				3AB69D822078F80700ABA419 /* PacketRouter.h in Headers */,
 				3AB69D602078F80700ABA419 /* PacketPassNotifier.h in Headers */,
 				3AB69D862078F80700ABA419 /* PacketStreamSender.h in Headers */,
 				3AB69D6E2078F80700ABA419 /* PacketProtoEncoder.h in Headers */,
 				3AB69D642078F80700ABA419 /* PacketPassPriorityQueue.h in Headers */,
 				3AB69DE52078F9B500ABA419 /* PacketPassInactivityMonitor.h in Headers */,
+				3AB69F51207939E500ABA419 /* snmp_pbuf_stream.h in Headers */,
+				3AB69F0B207939E500ABA419 /* altcp_tls_mbedtls_mem.h in Headers */,
 				3AB69D4A2078F80700ABA419 /* PacketCopier.h in Headers */,
 				3AB69E052078FC5800ABA419 /* BPending.h in Headers */,
 				3AB69D422078F80700ABA419 /* LineBuffer.h in Headers */,
@@ -775,6 +1472,7 @@
 				3AB69CEA2078F7E500ABA419 /* BReactor.h in Headers */,
 				3AB69C7D2078F5AE00ABA419 /* tun2socks.h in Headers */,
 				3AB69D4E2078F80700ABA419 /* PacketPassConnector.h in Headers */,
+				3AB69F19207939E500ABA419 /* fsdata.h in Headers */,
 				3AB69CD02078F7E500ABA419 /* BSignal.h in Headers */,
 				3AB69D722078F80700ABA419 /* PacketProtoFlow.h in Headers */,
 				3AB69D8A2078F80700ABA419 /* RouteBuffer.h in Headers */,
@@ -803,7 +1501,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3AB69E1C20790C4300ABA419 /* PBXTargetDependency */,
 			);
 			name = "tun2socks iOS";
 			productName = tun2socks;
@@ -855,12 +1552,6 @@
 			mainGroup = 3A6EB14020784E3300763A08;
 			productRefGroup = 3A6EB14B20784E3300763A08 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3AB69E1320790C2300ABA419 /* Products */;
-					ProjectRef = 3AB69E1220790C2300ABA419 /* lwip.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3A6EB14920784E3300763A08 /* tun2socks iOS */,
@@ -869,28 +1560,17 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		3AB69E1820790C2300ABA419 /* lwip.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = lwip.framework;
-			remoteRef = 3AB69E1720790C2300ABA419 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3AB69E1A20790C2300ABA419 /* lwip.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = lwip.framework;
-			remoteRef = 3AB69E1920790C2300ABA419 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		3A6EB14820784E3300763A08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB69FA6207939E500ABA419 /* PPPD_FOLLOWUP in Resources */,
+				3AB69F70207939E500ABA419 /* FILES in Resources */,
+				3AB69F12207939E500ABA419 /* index.html in Resources */,
+				3AB69F10207939E500ABA419 /* sics.gif in Resources */,
+				3AB69F0E207939E500ABA419 /* 404.html in Resources */,
+				3AB69F9C207939E500ABA419 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,6 +1578,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB69FA7207939E500ABA419 /* PPPD_FOLLOWUP in Resources */,
+				3AB69F71207939E500ABA419 /* FILES in Resources */,
+				3AB69F13207939E500ABA419 /* index.html in Resources */,
+				3AB69F11207939E500ABA419 /* sics.gif in Resources */,
+				3AB69F0F207939E500ABA419 /* 404.html in Resources */,
+				3AB69F9D207939E500ABA419 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,53 +1594,166 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB69F76207939E500ABA419 /* ccp.c in Sources */,
+				3AB69EF0207939E500ABA419 /* memp.c in Sources */,
+				3AB69FC4207939E500ABA419 /* sockets.c in Sources */,
+				3AB69F90207939E500ABA419 /* mppe.c in Sources */,
+				3AB69F02207939E500ABA419 /* timeouts.c in Sources */,
 				3AB69D672078F80700ABA419 /* PacketProtoDecoder.c in Sources */,
 				3AB69D6B2078F80700ABA419 /* PacketProtoEncoder.c in Sources */,
+				3AB69F88207939E500ABA419 /* ipcp.c in Sources */,
 				3AB69D832078F80700ABA419 /* PacketStreamSender.c in Sources */,
 				3AB69DC62078F93B00ABA419 /* BSocksClient.c in Sources */,
+				3AB69F30207939E500ABA419 /* snmp_asn1.c in Sources */,
 				3AB69D612078F80700ABA419 /* PacketPassPriorityQueue.c in Sources */,
 				3AB69D972078F80700ABA419 /* SingleStreamSender.c in Sources */,
 				3AB69C7E2078F5AE00ABA419 /* SocksUdpGwClient.c in Sources */,
 				3AB69DD22078F97B00ABA419 /* UdpGwClient.c in Sources */,
+				3AB69ECE207939E500ABA419 /* dhcp.c in Sources */,
+				3AB69EE0207939E500ABA419 /* icmp6.c in Sources */,
+				3AB69EC6207939E500ABA419 /* inet_chksum.c in Sources */,
 				3AB69D7F2078F80700ABA419 /* PacketRouter.c in Sources */,
+				3AB69F3E207939E500ABA419 /* snmp_mib2_ip.c in Sources */,
+				3AB69ED8207939E500ABA419 /* ip4_addr.c in Sources */,
 				3AB69D872078F80700ABA419 /* RouteBuffer.c in Sources */,
+				3AB69F98207939E500ABA419 /* md4.c in Sources */,
+				3AB69F8E207939E500ABA419 /* magic.c in Sources */,
 				3AB69D592078F80700ABA419 /* PacketPassInterface.c in Sources */,
 				3AB69CC92078F7E500ABA419 /* BTime.c in Sources */,
 				3AB69D3F2078F80700ABA419 /* LineBuffer.c in Sources */,
+				3AB69F42207939E500ABA419 /* snmp_mib2_system.c in Sources */,
 				3AB69D8B2078F80700ABA419 /* SinglePacketBuffer.c in Sources */,
+				3AB69F44207939E500ABA419 /* snmp_mib2_tcp.c in Sources */,
+				3AB69FB0207939E500ABA419 /* utils.c in Sources */,
 				3AB69CB32078F7E500ABA419 /* BSignal.c in Sources */,
 				3AB69CF72078F7E500ABA419 /* BConnection_unix.c in Sources */,
+				3AB69F6C207939E500ABA419 /* ethernet.c in Sources */,
 				3AB69E1F20790D1600ABA419 /* tun2socks.c in Sources */,
+				3AB69F6E207939E500ABA419 /* ethernetif.c in Sources */,
+				3AB69EE4207939E500ABA419 /* ip6.c in Sources */,
+				3AB69F84207939E500ABA419 /* eui64.c in Sources */,
+				3AB69F94207939E500ABA419 /* arc4.c in Sources */,
+				3AB69F4E207939E500ABA419 /* snmp_pbuf_stream.c in Sources */,
 				3AB69D5D2078F80700ABA419 /* PacketPassNotifier.c in Sources */,
+				3AB69F52207939E500ABA419 /* snmp_raw.c in Sources */,
+				3AB69FD820793F6800ABA419 /* BTap.c in Sources */,
+				3AB69F2C207939E500ABA419 /* netbiosns.c in Sources */,
+				3AB69F86207939E500ABA419 /* fsm.c in Sources */,
 				3AB69D772078F80700ABA419 /* PacketRecvConnector.c in Sources */,
+				3AB69F06207939E500ABA419 /* altcp_tls_mbedtls.c in Sources */,
+				3AB69EC8207939E500ABA419 /* init.c in Sources */,
 				3AB69CBB2078F7E500ABA419 /* BLockReactor.c in Sources */,
 				3AB69CCB2078F7E500ABA419 /* BReactor_badvpn.c in Sources */,
+				3AB69EE2207939E500ABA419 /* inet6.c in Sources */,
+				3AB69F54207939E500ABA419 /* snmp_scalar.c in Sources */,
+				3AB69F00207939E500ABA419 /* tcp_out.c in Sources */,
+				3AB69F68207939E500ABA419 /* tftp_server.c in Sources */,
+				3AB69F7A207939E500ABA419 /* chap-new.c in Sources */,
+				3AB69EC4207939E500ABA419 /* dns.c in Sources */,
 				3AB69DE22078F9B500ABA419 /* PacketPassInactivityMonitor.c in Sources */,
+				3AB69F4C207939E500ABA419 /* snmp_netconn.c in Sources */,
+				3AB69EE8207939E500ABA419 /* ip6_frag.c in Sources */,
+				3AB69EE6207939E500ABA419 /* ip6_addr.c in Sources */,
+				3AB69ECC207939E500ABA419 /* autoip.c in Sources */,
+				3AB69FB2207939E500ABA419 /* vj.c in Sources */,
+				3AB69F9A207939E500ABA419 /* md5.c in Sources */,
 				3AB69E0A2078FC5800ABA419 /* DebugObject.c in Sources */,
 				3AB69D732078F80700ABA419 /* PacketRecvBlocker.c in Sources */,
+				3AB69EFE207939E500ABA419 /* tcp_in.c in Sources */,
+				3AB69EF8207939E500ABA419 /* stats.c in Sources */,
+				3AB69F80207939E500ABA419 /* eap.c in Sources */,
+				3AB69EFA207939E500ABA419 /* sys.c in Sources */,
 				3AB69D472078F80700ABA419 /* PacketCopier.c in Sources */,
+				3AB69FB6207939E500ABA419 /* api_lib.c in Sources */,
+				3AB69EFC207939E500ABA419 /* tcp.c in Sources */,
+				3AB69FD420793C9100ABA419 /* sys.c in Sources */,
+				3AB69EC2207939E500ABA419 /* def.c in Sources */,
+				3AB69FC2207939E500ABA419 /* netifapi.c in Sources */,
 				3AB69D9B2078F80700ABA419 /* StreamPacketSender.c in Sources */,
 				3AB69CE12078F7E500ABA419 /* BNetwork.c in Sources */,
 				3AB69CB72078F7E500ABA419 /* BUnixSignal.c in Sources */,
+				3AB69F82207939E500ABA419 /* ecp.c in Sources */,
+				3AB69FA2207939E500ABA419 /* pppapi.c in Sources */,
+				3AB69FB8207939E500ABA419 /* api_msg.c in Sources */,
+				3AB69F62207939E500ABA419 /* snmpv3_mbedtls.c in Sources */,
+				3AB69EC0207939E500ABA419 /* altcp_tcp.c in Sources */,
 				3AB69D6F2078F80700ABA419 /* PacketProtoFlow.c in Sources */,
 				3AB69D4F2078F80700ABA419 /* PacketPassFairQueue.c in Sources */,
+				3AB69F48207939E500ABA419 /* snmp_msg.c in Sources */,
+				3AB69F5E207939E500ABA419 /* snmp_traps.c in Sources */,
 				3AB69E022078FC5800ABA419 /* BPending.c in Sources */,
+				3AB69F66207939E500ABA419 /* sntp.c in Sources */,
+				3AB69EDA207939E500ABA419 /* ip4_frag.c in Sources */,
+				3AB69F26207939E500ABA419 /* lwiperf.c in Sources */,
 				3AB69DA72078F80700ABA419 /* StreamRecvConnector.c in Sources */,
+				3AB69F34207939E500ABA419 /* snmp_core.c in Sources */,
+				3AB69FBE207939E500ABA419 /* netbuf.c in Sources */,
+				3AB69F2E207939E500ABA419 /* smtp.c in Sources */,
 				3AB69D392078F80700ABA419 /* BufferWriter.c in Sources */,
+				3AB69ED2207939E500ABA419 /* icmp.c in Sources */,
+				3AB69F46207939E500ABA419 /* snmp_mib2_udp.c in Sources */,
+				3AB69FBA207939E500ABA419 /* err.c in Sources */,
 				3AB69DF82078FC5800ABA419 /* BLog.c in Sources */,
+				3AB69F92207939E500ABA419 /* multilink.c in Sources */,
+				3AB69F5A207939E500ABA419 /* snmp_table.c in Sources */,
+				3AB69EF2207939E500ABA419 /* netif.c in Sources */,
+				3AB69F9E207939E500ABA419 /* sha1.c in Sources */,
+				3AB69EBE207939E500ABA419 /* altcp.c in Sources */,
+				3AB69F96207939E500ABA419 /* des.c in Sources */,
+				3AB69FC6207939E500ABA419 /* tcpip.c in Sources */,
+				3AB69F04207939E500ABA419 /* udp.c in Sources */,
+				3AB69EDC207939E500ABA419 /* dhcp6.c in Sources */,
+				3AB69ED6207939E500ABA419 /* ip4.c in Sources */,
+				3AB69F60207939E500ABA419 /* snmpv3.c in Sources */,
+				3AB69F6A207939E500ABA419 /* bridgeif.c in Sources */,
+				3AB69F7C207939E500ABA419 /* chap_ms.c in Sources */,
 				3AB69CD72078F7E500ABA419 /* BInputProcess.c in Sources */,
+				3AB69F8A207939E500ABA419 /* ipv6cp.c in Sources */,
+				3AB69F72207939E500ABA419 /* lowpan6.c in Sources */,
 				3AB69CF32078F7E500ABA419 /* BProcess.c in Sources */,
 				3AB69DFC2078FC5800ABA419 /* BLog_syslog.c in Sources */,
+				3AB69F28207939E500ABA419 /* mdns.c in Sources */,
+				3AB69FA0207939E500ABA419 /* ppp.c in Sources */,
+				3AB69EEC207939E500ABA419 /* nd6.c in Sources */,
 				3AB69CE72078F7E500ABA419 /* BConnection_common.c in Sources */,
 				3AB69D8F2078F80700ABA419 /* SinglePacketSender.c in Sources */,
 				3AB69CC72078F7E500ABA419 /* BThreadSignal.c in Sources */,
+				3AB69FA8207939E500ABA419 /* pppoe.c in Sources */,
+				3AB69ED4207939E500ABA419 /* igmp.c in Sources */,
+				3AB69ECA207939E500ABA419 /* ip.c in Sources */,
+				3AB69F3A207939E500ABA419 /* snmp_mib2_icmp.c in Sources */,
+				3AB69FDE2079412C00ABA419 /* fs.c in Sources */,
+				3AB69FBC207939E500ABA419 /* if_api.c in Sources */,
+				3AB69F3C207939E500ABA419 /* snmp_mib2_interfaces.c in Sources */,
+				3AB69EEE207939E500ABA419 /* mem.c in Sources */,
 				3AB69DDE2078F9B500ABA419 /* KeepaliveIO.c in Sources */,
 				3AB69D932078F80700ABA419 /* SingleStreamReceiver.c in Sources */,
+				3AB69FAA207939E500ABA419 /* pppol2tp.c in Sources */,
+				3AB69F58207939E500ABA419 /* snmp_snmpv2_usm.c in Sources */,
+				3AB69EF6207939E500ABA419 /* raw.c in Sources */,
+				3AB69FA4207939E500ABA419 /* pppcrypt.c in Sources */,
+				3AB69EF4207939E500ABA419 /* pbuf.c in Sources */,
+				3AB69F7E207939E500ABA419 /* demand.c in Sources */,
 				3AB69DAB2078F80700ABA419 /* StreamRecvInterface.c in Sources */,
+				3AB69ED0207939E500ABA419 /* etharp.c in Sources */,
+				3AB69F08207939E500ABA419 /* altcp_tls_mbedtls_mem.c in Sources */,
+				3AB69FAE207939E500ABA419 /* upap.c in Sources */,
+				3AB69F40207939E500ABA419 /* snmp_mib2_snmp.c in Sources */,
 				3AB69D432078F80700ABA419 /* PacketBuffer.c in Sources */,
+				3AB69F5C207939E500ABA419 /* snmp_threadsync.c in Sources */,
 				3AB69D552078F80700ABA419 /* PacketPassFifoQueue.c in Sources */,
+				3AB69F8C207939E500ABA419 /* lcp.c in Sources */,
+				3AB69EEA207939E500ABA419 /* mld6.c in Sources */,
+				3AB69F74207939E500ABA419 /* auth.c in Sources */,
+				3AB69FAC207939E500ABA419 /* pppos.c in Sources */,
 				3AB69D4B2078F80700ABA419 /* PacketPassConnector.c in Sources */,
+				3AB69FC0207939E500ABA419 /* netdb.c in Sources */,
+				3AB69F56207939E500ABA419 /* snmp_snmpv2_framework.c in Sources */,
+				3AB69F1A207939E500ABA419 /* httpd.c in Sources */,
+				3AB69F78207939E500ABA419 /* chap-md5.c in Sources */,
 				3AB69D7B2078F80700ABA419 /* PacketRecvInterface.c in Sources */,
+				3AB69EDE207939E500ABA419 /* ethip6.c in Sources */,
+				3AB69F38207939E500ABA419 /* snmp_mib2.c in Sources */,
 				3AB69DA32078F80700ABA419 /* StreamPassInterface.c in Sources */,
 				3AB69D9F2078F80700ABA419 /* StreamPassConnector.c in Sources */,
 			);
@@ -964,67 +1763,172 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB69F77207939E500ABA419 /* ccp.c in Sources */,
+				3AB69EF1207939E500ABA419 /* memp.c in Sources */,
+				3AB69FC5207939E500ABA419 /* sockets.c in Sources */,
+				3AB69F91207939E500ABA419 /* mppe.c in Sources */,
+				3AB69F03207939E500ABA419 /* timeouts.c in Sources */,
 				3AB69D682078F80700ABA419 /* PacketProtoDecoder.c in Sources */,
 				3AB69D6C2078F80700ABA419 /* PacketProtoEncoder.c in Sources */,
+				3AB69F89207939E500ABA419 /* ipcp.c in Sources */,
 				3AB69D842078F80700ABA419 /* PacketStreamSender.c in Sources */,
 				3AB69DC72078F93B00ABA419 /* BSocksClient.c in Sources */,
+				3AB69F31207939E500ABA419 /* snmp_asn1.c in Sources */,
 				3AB69D622078F80700ABA419 /* PacketPassPriorityQueue.c in Sources */,
 				3AB69D982078F80700ABA419 /* SingleStreamSender.c in Sources */,
 				3AB69C7F2078F5AE00ABA419 /* SocksUdpGwClient.c in Sources */,
 				3AB69DD32078F97B00ABA419 /* UdpGwClient.c in Sources */,
+				3AB69ECF207939E500ABA419 /* dhcp.c in Sources */,
+				3AB69EE1207939E500ABA419 /* icmp6.c in Sources */,
+				3AB69EC7207939E500ABA419 /* inet_chksum.c in Sources */,
 				3AB69D802078F80700ABA419 /* PacketRouter.c in Sources */,
+				3AB69F3F207939E500ABA419 /* snmp_mib2_ip.c in Sources */,
+				3AB69ED9207939E500ABA419 /* ip4_addr.c in Sources */,
 				3AB69D882078F80700ABA419 /* RouteBuffer.c in Sources */,
+				3AB69F99207939E500ABA419 /* md4.c in Sources */,
+				3AB69F8F207939E500ABA419 /* magic.c in Sources */,
 				3AB69D5A2078F80700ABA419 /* PacketPassInterface.c in Sources */,
 				3AB69CCA2078F7E500ABA419 /* BTime.c in Sources */,
 				3AB69D402078F80700ABA419 /* LineBuffer.c in Sources */,
+				3AB69F43207939E500ABA419 /* snmp_mib2_system.c in Sources */,
 				3AB69D8C2078F80700ABA419 /* SinglePacketBuffer.c in Sources */,
+				3AB69F45207939E500ABA419 /* snmp_mib2_tcp.c in Sources */,
+				3AB69FB1207939E500ABA419 /* utils.c in Sources */,
 				3AB69CB42078F7E500ABA419 /* BSignal.c in Sources */,
 				3AB69CF82078F7E500ABA419 /* BConnection_unix.c in Sources */,
+				3AB69F6D207939E500ABA419 /* ethernet.c in Sources */,
 				3AB69E2020790D1600ABA419 /* tun2socks.c in Sources */,
+				3AB69F6F207939E500ABA419 /* ethernetif.c in Sources */,
+				3AB69EE5207939E500ABA419 /* ip6.c in Sources */,
+				3AB69F85207939E500ABA419 /* eui64.c in Sources */,
+				3AB69F95207939E500ABA419 /* arc4.c in Sources */,
+				3AB69F4F207939E500ABA419 /* snmp_pbuf_stream.c in Sources */,
 				3AB69D5E2078F80700ABA419 /* PacketPassNotifier.c in Sources */,
+				3AB69F53207939E500ABA419 /* snmp_raw.c in Sources */,
+				3AB69FD920793F6800ABA419 /* BTap.c in Sources */,
+				3AB69F2D207939E500ABA419 /* netbiosns.c in Sources */,
+				3AB69F87207939E500ABA419 /* fsm.c in Sources */,
 				3AB69D782078F80700ABA419 /* PacketRecvConnector.c in Sources */,
+				3AB69F07207939E500ABA419 /* altcp_tls_mbedtls.c in Sources */,
+				3AB69EC9207939E500ABA419 /* init.c in Sources */,
 				3AB69CBC2078F7E500ABA419 /* BLockReactor.c in Sources */,
 				3AB69CCC2078F7E500ABA419 /* BReactor_badvpn.c in Sources */,
+				3AB69EE3207939E500ABA419 /* inet6.c in Sources */,
+				3AB69F55207939E500ABA419 /* snmp_scalar.c in Sources */,
+				3AB69F01207939E500ABA419 /* tcp_out.c in Sources */,
+				3AB69F69207939E500ABA419 /* tftp_server.c in Sources */,
+				3AB69F7B207939E500ABA419 /* chap-new.c in Sources */,
+				3AB69EC5207939E500ABA419 /* dns.c in Sources */,
 				3AB69DE32078F9B500ABA419 /* PacketPassInactivityMonitor.c in Sources */,
+				3AB69F4D207939E500ABA419 /* snmp_netconn.c in Sources */,
+				3AB69EE9207939E500ABA419 /* ip6_frag.c in Sources */,
+				3AB69EE7207939E500ABA419 /* ip6_addr.c in Sources */,
+				3AB69ECD207939E500ABA419 /* autoip.c in Sources */,
+				3AB69FB3207939E500ABA419 /* vj.c in Sources */,
+				3AB69F9B207939E500ABA419 /* md5.c in Sources */,
 				3AB69E0B2078FC5800ABA419 /* DebugObject.c in Sources */,
 				3AB69D742078F80700ABA419 /* PacketRecvBlocker.c in Sources */,
+				3AB69EFF207939E500ABA419 /* tcp_in.c in Sources */,
+				3AB69EF9207939E500ABA419 /* stats.c in Sources */,
+				3AB69F81207939E500ABA419 /* eap.c in Sources */,
+				3AB69EFB207939E500ABA419 /* sys.c in Sources */,
 				3AB69D482078F80700ABA419 /* PacketCopier.c in Sources */,
+				3AB69FB7207939E500ABA419 /* api_lib.c in Sources */,
+				3AB69EFD207939E500ABA419 /* tcp.c in Sources */,
+				3AB69FD520793C9100ABA419 /* sys.c in Sources */,
+				3AB69EC3207939E500ABA419 /* def.c in Sources */,
+				3AB69FC3207939E500ABA419 /* netifapi.c in Sources */,
 				3AB69D9C2078F80700ABA419 /* StreamPacketSender.c in Sources */,
 				3AB69CE22078F7E500ABA419 /* BNetwork.c in Sources */,
 				3AB69CB82078F7E500ABA419 /* BUnixSignal.c in Sources */,
+				3AB69F83207939E500ABA419 /* ecp.c in Sources */,
+				3AB69FA3207939E500ABA419 /* pppapi.c in Sources */,
+				3AB69FB9207939E500ABA419 /* api_msg.c in Sources */,
+				3AB69F63207939E500ABA419 /* snmpv3_mbedtls.c in Sources */,
+				3AB69EC1207939E500ABA419 /* altcp_tcp.c in Sources */,
 				3AB69D702078F80700ABA419 /* PacketProtoFlow.c in Sources */,
 				3AB69D502078F80700ABA419 /* PacketPassFairQueue.c in Sources */,
+				3AB69F49207939E500ABA419 /* snmp_msg.c in Sources */,
+				3AB69F5F207939E500ABA419 /* snmp_traps.c in Sources */,
 				3AB69E032078FC5800ABA419 /* BPending.c in Sources */,
+				3AB69F67207939E500ABA419 /* sntp.c in Sources */,
+				3AB69EDB207939E500ABA419 /* ip4_frag.c in Sources */,
+				3AB69F27207939E500ABA419 /* lwiperf.c in Sources */,
 				3AB69DA82078F80700ABA419 /* StreamRecvConnector.c in Sources */,
+				3AB69F35207939E500ABA419 /* snmp_core.c in Sources */,
+				3AB69FBF207939E500ABA419 /* netbuf.c in Sources */,
+				3AB69F2F207939E500ABA419 /* smtp.c in Sources */,
 				3AB69D3A2078F80700ABA419 /* BufferWriter.c in Sources */,
+				3AB69ED3207939E500ABA419 /* icmp.c in Sources */,
+				3AB69F47207939E500ABA419 /* snmp_mib2_udp.c in Sources */,
+				3AB69FBB207939E500ABA419 /* err.c in Sources */,
 				3AB69DF92078FC5800ABA419 /* BLog.c in Sources */,
+				3AB69F93207939E500ABA419 /* multilink.c in Sources */,
+				3AB69F5B207939E500ABA419 /* snmp_table.c in Sources */,
+				3AB69EF3207939E500ABA419 /* netif.c in Sources */,
+				3AB69F9F207939E500ABA419 /* sha1.c in Sources */,
+				3AB69EBF207939E500ABA419 /* altcp.c in Sources */,
+				3AB69F97207939E500ABA419 /* des.c in Sources */,
+				3AB69FC7207939E500ABA419 /* tcpip.c in Sources */,
+				3AB69F05207939E500ABA419 /* udp.c in Sources */,
+				3AB69EDD207939E500ABA419 /* dhcp6.c in Sources */,
+				3AB69ED7207939E500ABA419 /* ip4.c in Sources */,
+				3AB69F61207939E500ABA419 /* snmpv3.c in Sources */,
+				3AB69F6B207939E500ABA419 /* bridgeif.c in Sources */,
+				3AB69F7D207939E500ABA419 /* chap_ms.c in Sources */,
 				3AB69CD82078F7E500ABA419 /* BInputProcess.c in Sources */,
+				3AB69F8B207939E500ABA419 /* ipv6cp.c in Sources */,
+				3AB69F73207939E500ABA419 /* lowpan6.c in Sources */,
 				3AB69CF42078F7E500ABA419 /* BProcess.c in Sources */,
 				3AB69DFD2078FC5800ABA419 /* BLog_syslog.c in Sources */,
+				3AB69F29207939E500ABA419 /* mdns.c in Sources */,
+				3AB69FA1207939E500ABA419 /* ppp.c in Sources */,
+				3AB69EED207939E500ABA419 /* nd6.c in Sources */,
 				3AB69CE82078F7E500ABA419 /* BConnection_common.c in Sources */,
 				3AB69D902078F80700ABA419 /* SinglePacketSender.c in Sources */,
 				3AB69CC82078F7E500ABA419 /* BThreadSignal.c in Sources */,
+				3AB69FA9207939E500ABA419 /* pppoe.c in Sources */,
+				3AB69ED5207939E500ABA419 /* igmp.c in Sources */,
+				3AB69ECB207939E500ABA419 /* ip.c in Sources */,
+				3AB69F3B207939E500ABA419 /* snmp_mib2_icmp.c in Sources */,
+				3AB69FDD2079412B00ABA419 /* fs.c in Sources */,
+				3AB69FBD207939E500ABA419 /* if_api.c in Sources */,
+				3AB69F3D207939E500ABA419 /* snmp_mib2_interfaces.c in Sources */,
+				3AB69EEF207939E500ABA419 /* mem.c in Sources */,
 				3AB69DDF2078F9B500ABA419 /* KeepaliveIO.c in Sources */,
 				3AB69D942078F80700ABA419 /* SingleStreamReceiver.c in Sources */,
+				3AB69FAB207939E500ABA419 /* pppol2tp.c in Sources */,
+				3AB69F59207939E500ABA419 /* snmp_snmpv2_usm.c in Sources */,
+				3AB69EF7207939E500ABA419 /* raw.c in Sources */,
+				3AB69FA5207939E500ABA419 /* pppcrypt.c in Sources */,
+				3AB69EF5207939E500ABA419 /* pbuf.c in Sources */,
+				3AB69F7F207939E500ABA419 /* demand.c in Sources */,
 				3AB69DAC2078F80700ABA419 /* StreamRecvInterface.c in Sources */,
+				3AB69ED1207939E500ABA419 /* etharp.c in Sources */,
+				3AB69F09207939E500ABA419 /* altcp_tls_mbedtls_mem.c in Sources */,
+				3AB69FAF207939E500ABA419 /* upap.c in Sources */,
+				3AB69F41207939E500ABA419 /* snmp_mib2_snmp.c in Sources */,
 				3AB69D442078F80700ABA419 /* PacketBuffer.c in Sources */,
+				3AB69F5D207939E500ABA419 /* snmp_threadsync.c in Sources */,
 				3AB69D562078F80700ABA419 /* PacketPassFifoQueue.c in Sources */,
+				3AB69F8D207939E500ABA419 /* lcp.c in Sources */,
+				3AB69EEB207939E500ABA419 /* mld6.c in Sources */,
+				3AB69F75207939E500ABA419 /* auth.c in Sources */,
+				3AB69FAD207939E500ABA419 /* pppos.c in Sources */,
 				3AB69D4C2078F80700ABA419 /* PacketPassConnector.c in Sources */,
+				3AB69FC1207939E500ABA419 /* netdb.c in Sources */,
+				3AB69F57207939E500ABA419 /* snmp_snmpv2_framework.c in Sources */,
+				3AB69F1B207939E500ABA419 /* httpd.c in Sources */,
+				3AB69F79207939E500ABA419 /* chap-md5.c in Sources */,
 				3AB69D7C2078F80700ABA419 /* PacketRecvInterface.c in Sources */,
+				3AB69EDF207939E500ABA419 /* ethip6.c in Sources */,
+				3AB69F39207939E500ABA419 /* snmp_mib2.c in Sources */,
 				3AB69DA42078F80700ABA419 /* StreamPassInterface.c in Sources */,
 				3AB69DA02078F80700ABA419 /* StreamPassConnector.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3AB69E1C20790C4300ABA419 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "lwip iOS";
-			targetProxy = 3AB69E1B20790C4300ABA419 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3A6EB15020784E3300763A08 /* Debug */ = {
@@ -1153,6 +2057,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					BADVPN_LIBTSOCKS,
+					BADVPN_USE_SYSLOG,
+					BADVPN_THREADWORK_USE_PTHREAD,
 					BADVPN_FREEBSD,
 					BADVPN_USE_KEVENT,
 					BADVPN_BREACTOR_BADVPN,
@@ -1162,9 +2069,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					..,
-					"../lwip-origin/src/include",
-					"../lwip-origin/test/fuzz/",
-					"../lwip-origin/xcode/include",
+					../lwip/src/include,
+					../lwip/custom,
 				);
 				INFOPLIST_FILE = tun2socks/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1190,6 +2096,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					BADVPN_LIBTSOCKS,
+					BADVPN_USE_SYSLOG,
+					BADVPN_THREADWORK_USE_PTHREAD,
 					BADVPN_FREEBSD,
 					BADVPN_USE_KEVENT,
 					BADVPN_BREACTOR_BADVPN,
@@ -1199,9 +2108,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					..,
-					"../lwip-origin/src/include",
-					"../lwip-origin/test/fuzz/",
-					"../lwip-origin/xcode/include",
+					../lwip/src/include,
+					../lwip/custom,
 				);
 				INFOPLIST_FILE = tun2socks/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1229,12 +2137,21 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					BADVPN_LIBTSOCKS,
+					BADVPN_USE_SYSLOG,
+					BADVPN_THREADWORK_USE_PTHREAD,
+					BADVPN_FREEBSD,
+					BADVPN_USE_KEVENT,
 					BADVPN_BREACTOR_BADVPN,
 					BADVPN_LITTLE_ENDIAN,
 					BADVPN_THREAD_SAFE,
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = ..;
+				HEADER_SEARCH_PATHS = (
+					..,
+					../lwip/src/include,
+					../lwip/custom,
+				);
 				INFOPLIST_FILE = tun2socks/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1262,12 +2179,21 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					BADVPN_LIBTSOCKS,
+					BADVPN_USE_SYSLOG,
+					BADVPN_THREADWORK_USE_PTHREAD,
+					BADVPN_FREEBSD,
+					BADVPN_USE_KEVENT,
 					BADVPN_BREACTOR_BADVPN,
 					BADVPN_LITTLE_ENDIAN,
 					BADVPN_THREAD_SAFE,
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = ..;
+				HEADER_SEARCH_PATHS = (
+					..,
+					../lwip/src/include,
+					../lwip/custom,
+				);
 				INFOPLIST_FILE = tun2socks/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
